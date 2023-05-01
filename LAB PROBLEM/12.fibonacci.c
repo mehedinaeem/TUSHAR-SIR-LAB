@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+// function
 int fibonacci(int f)
 {
     if (f == 0)
@@ -8,6 +10,7 @@ int fibonacci(int f)
     else
         return (fibonacci(f - 1) + fibonacci(f - 2));
 }
+
 int main()
 {
     int n;

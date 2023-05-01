@@ -9,7 +9,7 @@ int main()
     int B[r][c];
 
     // input ara1
-    printf("Enter the %d elements of the matrix A: ",r*c);
+    printf("Enter the %d elements of the matrix A: ", r * c);
     for (int i = 0; i < r; i++)
     {
         for (int j = 0; j < c; j++)
@@ -19,7 +19,7 @@ int main()
     }
 
     // input ara2
-    printf("Enter the %d elements of the matrix B: ",r*c);
+    printf("Enter the %d elements of the matrix B: ", r * c);
     for (int i = 0; i < r; i++)
     {
         for (int j = 0; j < c; j++)
@@ -28,24 +28,24 @@ int main()
         }
     }
 
-    //The first matrix
+    // The first matrix
     printf("The first matrix is: \n");
     for (int i = 0; i < r; i++)
     {
         for (int j = 0; j < c; j++)
         {
-            printf("%d ",A[i][j]);
+            printf("%d ", A[i][j]);
         }
         printf("\n");
     }
 
-    //The 2nd matrix
+    // The 2nd matrix
     printf("The second matrix is: \n");
     for (int i = 0; i < r; i++)
     {
         for (int j = 0; j < c; j++)
         {
-            printf("%d ",B[i][j]);
+            printf("%d ", B[i][j]);
         }
         printf("\n");
     }

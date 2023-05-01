@@ -1,25 +1,24 @@
-#include<stdio.h>
+#include <stdio.h>
 
+//function
 int fact(int m)
 {
 
-    if(m==1)
+    if (m == 1)
         return 1;
     else
-        {
-            int f=m*fact(m-1);
-            return f;
-        }
+    {
+        int f = m * fact(m - 1);
+        return f;
+    }
 }
+
 int main()
 {
-   int n;
-   scanf("%d",&n);
-   int result=fact(n);
-   printf("%d",result);
+    int n;
+    scanf("%d", &n);
+    int result = fact(n);
+    printf("%d", result);
 
-   return 0;
+    return 0;
 }
-
-
-
