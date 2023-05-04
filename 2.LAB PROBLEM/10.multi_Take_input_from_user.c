@@ -64,7 +64,7 @@ int main() {
         printf("Do you want to take input again (y/n): ");
         char c;
         scanf(" %c", &c);
-        if (c == 'y') {
+        if (c == 'y' || c=='Y') {
             main();
         }
         else
