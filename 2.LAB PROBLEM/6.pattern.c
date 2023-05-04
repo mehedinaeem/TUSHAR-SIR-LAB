@@ -7,6 +7,14 @@ int main()
     //thats loop for prints row
     for (int i = 1; i <= n; i++)
     {
+
+        //print space
+        for(int s=n-i;s>0;s--)
+        {
+            printf("  ");
+        }
+
+        
         //increasing part of pattern
         for (j = i; j < i * 2; j++)
         {
