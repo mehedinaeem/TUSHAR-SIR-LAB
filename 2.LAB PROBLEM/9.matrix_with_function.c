@@ -47,6 +47,7 @@ void display(int A[100][100], int x, int y)
         printf("\n");
     }
 }
+
 int main()
 {
     int r, c;
