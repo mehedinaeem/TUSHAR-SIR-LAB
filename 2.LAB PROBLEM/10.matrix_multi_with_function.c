@@ -12,12 +12,12 @@ void getMatrixElements(int A[100][100], int x, int y)
 }
 void multiflyMatrix(int A[100][100], int B[100][100], int C[100][100], int x, int y, int p, int q)
 {
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i < y; i++)
     {
         for (int j = 0; j < y; j++)
         {
             C[i][j] = 0;
-            for (int k = 0; k < y; k++)
+            for (int k = 0; k < p; k++)
             {
                 C[i][j] += A[i][k] * B[k][j];
             }
