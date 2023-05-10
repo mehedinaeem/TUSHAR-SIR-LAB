@@ -9,7 +9,7 @@ int main()
     int flag = 0;
 
     // loop for check prime
-    for (int i = ; i <= n; i++)
+    for (int i = 2; i <= n; i++)
     {
         flag = 0;
         for (int j = 2; j < i; j++)
