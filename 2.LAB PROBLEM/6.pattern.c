@@ -9,7 +9,7 @@ int main()
     {
 
         //print space
-        for(int s=n-i;s>0;s--)
+        for(int s=1;s<=n-i;s++)
         {
             printf("  ");
         }

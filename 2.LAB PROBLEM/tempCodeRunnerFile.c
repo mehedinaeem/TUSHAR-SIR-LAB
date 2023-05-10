@@ -1,1 +1,2 @@
-printf("terminate the program");
+ int n, i, j, k;
+    scanf("%d", &n);
