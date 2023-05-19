@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//function
+// function
 int fact(int m)
 {
 
@@ -16,6 +16,7 @@ int fact(int m)
 int main()
 {
     int n;
+    printf("Enter N: ");
     scanf("%d", &n);
     int result = fact(n);
     printf("%d", result);
