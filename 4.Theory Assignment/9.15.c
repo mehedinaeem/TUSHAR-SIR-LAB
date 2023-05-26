@@ -1,36 +1,27 @@
 #include <stdio.h>
-#include <string.h>
+#include<string.h>
+int main() {
+  char ch[100];
+  printf("Enter a string: ");
+  scanf("%s", ch);
 
-int main()
-{
-    int i, j, k;
-    char ch[100];
-    printf("Enter a string: ");
-    scanf("%s", ch);
-    printf("%d\n", strlen(ch));
+  int n = strlen(ch);
 
-    // Loop for printing rows
-    for (i = 1; i <= strlen(ch) / 2; i++)
-    {
-        // Print spaces
-        for (int s = 1; s <= strlen(ch) / 2 - i; s++)
-        {
-            printf("  ");
-        }
-
-        // Increasing part of the pattern
-        for (j = i; j < i * 2; j++)
-        {
-            printf("%c ", ch[j - 1]);
-        }
-
-        // Decreasing or 2nd part of the pattern
-        for (k = j - 2; k >= i; k--)
-        {
-            printf("%c ", ch[k - 1]);
-        }
-        printf("\n");
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n - i; j++) {
+      printf(" ");
     }
 
-    return 0;
+    for (int j = i; j < n; j++) {
+      if (j > 0) {
+        printf(" ");
+      }
+      printf("%c ", ch[j]);
+    }
+
+    printf("\n");
+  }
+
+  return 0;
 }
+
