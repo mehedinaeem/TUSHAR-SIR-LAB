@@ -26,7 +26,7 @@ int main()
         }
         
         ar[i] = length;
-        ara[i]=s;
+        //ara[i]=s;
     }
 
     int max = INT_MIN;
@@ -41,13 +41,13 @@ int main()
     }
 
     //string compare
-    for (int i = 1; i <= n; i++)
-    {
-        if (ar[i] > max)
-            max = ar[i];
-        if (ar[i] < min)
-            min = ar[i];
-    }
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     if (ar[i] > max)
+    //         max = ar[i];
+    //     if (ar[i] < min)
+    //         min = ar[i];
+    // }
     
     printf("Max length: %d\n", max);
     printf("Min length: %d\n", min);
