@@ -9,6 +9,7 @@ int main()
     printf("Enter the number of strings: ");
     scanf("%d", &n);
     int ar[n];
+    char ara[n];
     
     for (int i = 0; i < n; i++)
     {
@@ -25,12 +26,22 @@ int main()
         }
         
         ar[i] = length;
+        ara[i]=s;
     }
 
     int max = INT_MIN;
     int min = INT_MAX;
     
     for (int i = 0; i < n; i++)
+    {
+        if (ar[i] > max)
+            max = ar[i];
+        if (ar[i] < min)
+            min = ar[i];
+    }
+
+    //string compare
+    for (int i = 1; i <= n; i++)
     {
         if (ar[i] > max)
             max = ar[i];

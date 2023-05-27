@@ -1,27 +1,30 @@
 #include <stdio.h>
-#include<string.h>
-int main() {
-  char ch[100];
-  printf("Enter a string: ");
-  scanf("%s", ch);
+#include <string.h>
+#include <math.h>
 
-  int n = strlen(ch);
+int main()
+{
+    char str[100];
+    scanf("%s", str);
+    int length = strlen(str);
+    int row = ceil(length / 2.0); // Calculate rows using ceil function
 
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n - i; j++) {
-      printf(" ");
+    printf("%d\n", row);
+    for (int i = 1; i <= row; i++)
+    {
+        // print spaces
+        for (int j = i; j < row; j++)
+            printf("  ");
+        
+        // increasing part
+        for (int col = i; col < i * 2 && col <= length; col++)
+            printf("%2c", str[col - 1]);
+
+        // decreasing part
+        for (int col = i * 2 - 2; col >= i && col <= length; col--)
+            printf("%2c", str[col - 1]);
+
+        printf("\n");
     }
-
-    for (int j = i; j < n; j++) {
-      if (j > 0) {
-        printf(" ");
-      }
-      printf("%c ", ch[j]);
-    }
-
-    printf("\n");
-  }
-
-  return 0;
+    return 0;
 }
-
