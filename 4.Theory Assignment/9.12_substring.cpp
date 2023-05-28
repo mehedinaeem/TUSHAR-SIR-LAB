@@ -15,7 +15,7 @@ int main()
     int count = 0;
     char* position = text;
 
-    while ((position = strstr(position, substring)) != NULL)
+    while ((position == strstr(position, substring)) != NULL)
     {
         count++;
         position += strlen(substring);
