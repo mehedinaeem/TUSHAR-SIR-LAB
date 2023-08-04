@@ -10,6 +10,7 @@ void getMatrixElements(int A[100][100], int x, int y)
         }
     }
 }
+
 void multiflyMatrix(int A[100][100], int B[100][100], int C[100][100], int x, int y, int p, int q)
 {
     for (int i = 0; i < y; i++)
