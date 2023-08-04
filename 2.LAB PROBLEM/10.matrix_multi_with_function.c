@@ -14,7 +14,7 @@ void multiflyMatrix(int A[100][100], int B[100][100], int C[100][100], int x, in
 {
     for (int i = 0; i < y; i++)
     {
-        for (int j = 0; j < y; j++)
+        for (int j = 0; j < q; j++)
         {
             C[i][j] = 0;
             for (int k = 0; k < p; k++)
@@ -27,7 +27,7 @@ void multiflyMatrix(int A[100][100], int B[100][100], int C[100][100], int x, in
     // Display the resultant matrix
     for (int i = 0; i < x; i++)
     {
-        for (int j = 0; j < y; j++)
+        for (int j = 0; j < q; j++)
         {
             printf("%d ", C[i][j]);
         }
@@ -51,7 +51,7 @@ int main()
 {
     int r1, c1, r2, c2;
     int A[100][100], B[100][100], C[100][100];
-    printf("Enter 1st matrix row & column: ");
+    printf("\nEnter 1st matrix row & column: ");
     scanf("%d %d", &r1, &c1);
 
     printf("Enter 2nd matrix row & column: ");
