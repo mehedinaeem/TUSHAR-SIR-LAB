@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int n;
-    cout<<"Enter Number:";
+    cout<<endl<<"Enter Number:";
     cin>>n;
     int sum=0;
     int count=0;
@@ -22,7 +22,7 @@ int main()
     }
     else
     {
-        cout<<"plz enter 3 digit number:"<<endl;
+        cout<<endl<<"plz enter 3 digit number:"<<endl;
         cout<<"Do u want to input again:(y/n): ";
         char c;
         cin>>c;
@@ -31,7 +31,7 @@ int main()
             main();
         }
         else
-        cout<<"Terminate the program";
+        cout<<endl<<"End the program"<<endl;
     }
     return 0;
 }
