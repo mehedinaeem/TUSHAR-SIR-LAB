@@ -1,0 +1,11 @@
+body{
+    background-color: aqua;
+}
+
+.cards{
+    display: flex;
+    flex: wrap;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+}
