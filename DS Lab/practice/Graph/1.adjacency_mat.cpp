@@ -12,12 +12,9 @@ int main()
     {
         int u, v, w;
         cin >> u >> v;
-        adj_mat[u][v] = 1; // one line for directed
-        adj_mat[v][u] = 1; // 2 line for undirected
+        adj_mat[u][v] = 1; 
+        adj_mat[v][u] = 1; 
 
-        // // for weighted graph
-        // adj_mat[u][v] = w; // one line for directed
-        // adj_mat[v][u] = w; // 2 line for undirec
     }
     cout << endl;
 
